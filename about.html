@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion by Zara – Designed to Delight</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: url("bgimage.avif") no-repeat center center fixed;
+      background-size: cover;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(62, 31, 31, 0.85);
+      color: #f7e1b5;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background-color: rgba(92, 47, 47, 0.85);
+      display: flex;
+      justify-content: center;
+      padding: 14px 0;
+    }
+
+    nav a {
+      color: #fff2d9;
+      padding: 14px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #f7e1b5;
+      color: #3e1f1f;
+      border-radius: 5px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 40px 30px;
+      background: rgba(255, 248, 236, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #7b2e2e;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding-left: 40px;
+      font-size: 18px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #ebd0b2;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #d8b98f;
+      border-radius: 6px;
+      background-color: #fffaf2;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #7b2e2e;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #3e1f1f;
+    }
+
+    footer {
+      background-color: rgba(62, 31, 31, 0.85);
+      color: #f4dcb0;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Fashion by Zara</h1>
+  <p>Where Elegance is Always in Season</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome to Our Fashion House</h2>
+  <p style="text-align:center;">
+    “Fashion by Zara” is your destination for exclusive, custom-designed clothing that blends global inspiration with Indian elegance. Each creation is a treat — crafted to fit like fine cuisine, styled with passion.
+  </p>
+  <p style="text-align:center; margin-top: 20px;">
+    Our designs reflect timeless sophistication — subtle yet striking. Just like a luxury dish, every outfit is built on detail, balance, and beauty. From fabric choice to finishing, we treat fashion as wearable art.
+  </p>
+</section>
+
+<section id="about">
+  <h2>About Zara Khurana</h2>
+  <p>
+    Zara Khurana is a celebrated designer from Mumbai with a background in fashion technology and textile art. Trained in Paris and Milan, she launched her label in 2015 and has since dressed brides, celebrities, and dreamers.
+  </p>
+
+  <h3 style="text-align:center;">Achievements</h3>
+  <ul>
+    <li>Featured in Vogue India & Femina</li>
+    <li>Finalist, Lakmé Fashion Week Rising Star 2021</li>
+    <li>Advocate for sustainable & eco-luxury fashion</li>
+  </ul>
+
+  <h3 style="text-align:center;">Vision</h3>
+  <p>
+    Zara believes that fashion is like fine dining — it must be savored, respected, and shared. Her mission is to make design personal, powerful, and timeless.
+  </p>
+
+  <h3 style="text-align:center; margin-top: 40px;">Design Process</h3>
+  <p>
+    Each collection begins with a story — a memory, a muse, or a mood. Sketches are translated into patterns, then refined with carefully sourced fabrics. Draping, stitching, hand-finishing — every piece is a journey from idea to elegance.
+  </p>
+</section>
+
+<section id="gallery">
+  <h2>Signature Designs</h2>
+  <p style="text-align:center;">
+    Explore some of our finest pieces below – as rich and layered as a gourmet platter.
+    Each look is styled to reflect individuality, confidence, and class.
+  </p>
+  <div class="gallery">
+    <img src="dress1.webp" alt="design 1">
+    <img src="dress2.jpg" alt="design 2">
+    <img src="dress3.jpg" alt="design 3">
+    <img src="dress4.webp" alt="design 4">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="#">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p style="text-align:center; margin-top: 20px;">
+    Email: contact@fashionbyzara.com<br>
+    Phone: +91 98574 85766
+  </p>
+  <p style="text-align:center; margin-top: 15px; font-style: italic;">
+    We usually respond within 24 hours. Virtual consultations and personal fittings available by appointment.
+  </p>
+</section>
+
+<footer>
+  &copy; 2025 Fashion by Zara. Designed with Taste.
+</footer>
+
+</body>
+</html>
